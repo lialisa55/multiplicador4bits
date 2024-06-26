@@ -73,4 +73,18 @@ set_location_assignment PIN_AB18 -to O14
 set_location_assignment PIN_AA17 -to O15
 set_location_assignment PIN_U22 -to O16
 set_location_assignment PIN_U13 -to A0
+set_location_assignment PIN_W16 -to AO1
+set_location_assignment PIN_Y17 -to AO2
+set_location_assignment PIN_V16 -to AO3
+set_location_assignment PIN_U17 -to AO4
+set_location_assignment PIN_V18 -to AO5
+set_location_assignment PIN_V19 -to AO6
+set_location_assignment PIN_N9 -to BO0
+set_location_assignment PIN_M8 -to BO1
+set_location_assignment PIN_P14 -to BO3
+set_location_assignment PIN_T14 -to BO2
+set_location_assignment PIN_C1 -to BO4
+set_location_assignment PIN_C2 -to BO5
+set_location_assignment PIN_W19 -to BO6
+set_location_assignment PIN_Y16 -to AO0
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

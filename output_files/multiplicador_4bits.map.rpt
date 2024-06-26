@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplicador_4bits
-Tue Jun 25 17:20:41 2024
+Tue Jun 25 22:05:01 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 25 17:20:41 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 25 22:05:01 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; multiplicador_4bits                         ;
 ; Top-level Entity Name           ; multiplicador_4bits                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 22                                          ;
+; Total pins                      ; 36                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -183,25 +183,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 23       ;
+; Estimate of Logic utilization (ALMs needed) ; 38       ;
 ;                                             ;          ;
-; Combinational ALUT usage for logic          ; 29       ;
+; Combinational ALUT usage for logic          ; 53       ;
 ;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 17       ;
-;     -- 5 input functions                    ; 3        ;
-;     -- 4 input functions                    ; 3        ;
-;     -- <=3 input functions                  ; 6        ;
+;     -- 6 input functions                    ; 23       ;
+;     -- 5 input functions                    ; 6        ;
+;     -- 4 input functions                    ; 16       ;
+;     -- <=3 input functions                  ; 8        ;
 ;                                             ;          ;
 ; Dedicated logic registers                   ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 22       ;
+; I/O pins                                    ; 36       ;
 ;                                             ;          ;
 ; Total DSP Blocks                            ; 0        ;
 ;                                             ;          ;
-; Maximum fan-out node                        ; A1~input ;
-; Maximum fan-out                             ; 11       ;
-; Total fan-out                               ; 177      ;
-; Average fan-out                             ; 2.42     ;
+; Maximum fan-out node                        ; A0~input ;
+; Maximum fan-out                             ; 25       ;
+; Total fan-out                               ; 314      ;
+; Average fan-out                             ; 2.51     ;
 +---------------------------------------------+----------+
 
 
@@ -210,30 +210,30 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name            ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
-; |multiplicador_4bits               ; 29 (0)              ; 0 (0)                     ; 0                 ; 0          ; 22   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
-;    |display_de_segmentos:inst1|    ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst1                          ; display_de_segmentos   ; work         ;
+; |multiplicador_4bits               ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 36   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
+;    |display_de_segmentos:inst18|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst18                         ; display_de_segmentos   ; work         ;
+;    |display_de_segmentos:inst19|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst19                         ; display_de_segmentos   ; work         ;
+;    |display_de_segmentos:inst1|    ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst1                          ; display_de_segmentos   ; work         ;
 ;    |display_de_segmentos:inst9|    ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst9                          ; display_de_segmentos   ; work         ;
-;    |multiplicador-completo:inst10| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst11| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst12| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst10| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst11| ; 3 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst12| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12|somador_completo:inst ; somador_completo       ; work         ;
 ;    |multiplicador-completo:inst13| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13                       ; multiplicador-completo ; work         ;
 ;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst14| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14                       ; multiplicador-completo ; work         ;
+;    |multiplicador-completo:inst14| ; 2 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14|somador_completo:inst ; somador_completo       ; work         ;
 ;    |multiplicador-completo:inst15| ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15                       ; multiplicador-completo ; work         ;
 ;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15|somador_completo:inst ; somador_completo       ; work         ;
 ;    |multiplicador-completo:inst16| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst16                       ; multiplicador-completo ; work         ;
 ;    |multiplicador-completo:inst17| ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst17                       ; multiplicador-completo ; work         ;
 ;    |multiplicador-completo:inst5|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst5                        ; multiplicador-completo ; work         ;
 ;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst5|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst6|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst6                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst6|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst7|  ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst8|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8|somador_completo:inst  ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst7|  ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7                        ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7|somador_completo:inst  ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst8|  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8                        ; multiplicador-completo ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -258,19 +258,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 31                          ;
-;     normal            ; 31                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 5                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 3                           ;
-;         6 data inputs ; 17                          ;
-; boundary_port         ; 22                          ;
+; arriav_lcell_comb     ; 53                          ;
+;     normal            ; 53                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 23                          ;
+; boundary_port         ; 36                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.44                        ;
+; Average LUT depth     ; 2.77                        ;
 +-----------------------+-----------------------------+
 
 
@@ -289,7 +287,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Jun 25 17:20:32 2024
+    Info: Processing started: Tue Jun 25 22:04:52 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplicador_4bits -c multiplicador_4bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -306,18 +304,16 @@ Info (12128): Elaborating entity "multiplicador-completo" for hierarchy "multipl
 Warning (12125): Using design file somador_completo.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: somador_completo
 Info (12128): Elaborating entity "somador_completo" for hierarchy "multiplicador-completo:inst14|somador_completo:inst"
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "O01" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 51 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 29 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Tue Jun 25 17:20:41 2024
+    Info: Processing ended: Tue Jun 25 22:05:01 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 

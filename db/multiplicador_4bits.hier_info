@@ -4,34 +4,42 @@ A3 => multiplicador-completo:inst4.A
 A3 => multiplicador-completo:inst8.A
 A3 => multiplicador-completo:inst13.A
 A3 => multiplicador-completo:inst17.A
+A3 => display_de_segmentos:inst19.A
 B0 => multiplicador-completo:inst4.B
 B0 => multiplicador-completo:inst3.B
 B0 => multiplicador-completo:inst2.B
 B0 => multiplicador-completo:inst.B
+B0 => display_de_segmentos:inst18.D
 A2 => multiplicador-completo:inst3.A
 A2 => multiplicador-completo:inst7.A
 A2 => multiplicador-completo:inst12.A
 A2 => multiplicador-completo:inst16.A
+A2 => display_de_segmentos:inst19.B
 A1 => multiplicador-completo:inst2.A
 A1 => multiplicador-completo:inst6.A
 A1 => multiplicador-completo:inst11.A
 A1 => multiplicador-completo:inst15.A
+A1 => display_de_segmentos:inst19.C
 A0 => multiplicador-completo:inst.A
 A0 => multiplicador-completo:inst5.A
 A0 => multiplicador-completo:inst10.A
 A0 => multiplicador-completo:inst14.A
+A0 => display_de_segmentos:inst19.D
 B1 => multiplicador-completo:inst7.B
 B1 => multiplicador-completo:inst6.B
 B1 => multiplicador-completo:inst5.B
 B1 => multiplicador-completo:inst8.B
+B1 => display_de_segmentos:inst18.C
 B2 => multiplicador-completo:inst11.B
 B2 => multiplicador-completo:inst10.B
 B2 => multiplicador-completo:inst13.B
 B2 => multiplicador-completo:inst12.B
+B2 => display_de_segmentos:inst18.B
 B3 => multiplicador-completo:inst14.B
 B3 => multiplicador-completo:inst17.B
 B3 => multiplicador-completo:inst16.B
 B3 => multiplicador-completo:inst15.B
+B3 => display_de_segmentos:inst18.A
 O00 <= display_de_segmentos:inst1.0
 O02 <= display_de_segmentos:inst1.2
 O03 <= display_de_segmentos:inst1.3
@@ -45,6 +53,20 @@ O13 <= display_de_segmentos:inst9.3
 O14 <= display_de_segmentos:inst9.4
 O15 <= display_de_segmentos:inst9.5
 O16 <= display_de_segmentos:inst9.6
+AO0 <= display_de_segmentos:inst19.0
+AO1 <= display_de_segmentos:inst19.1
+AO2 <= display_de_segmentos:inst19.2
+AO3 <= display_de_segmentos:inst19.3
+AO4 <= display_de_segmentos:inst19.4
+AO5 <= display_de_segmentos:inst19.5
+AO6 <= display_de_segmentos:inst19.6
+BO0 <= display_de_segmentos:inst18.0
+BO1 <= display_de_segmentos:inst18.1
+BO2 <= display_de_segmentos:inst18.2
+BO3 <= display_de_segmentos:inst18.3
+BO4 <= display_de_segmentos:inst18.4
+BO5 <= display_de_segmentos:inst18.5
+BO6 <= display_de_segmentos:inst18.6
 
 
 |multiplicador_4bits|display_de_segmentos:inst1
@@ -144,12 +166,12 @@ D => inst70.IN3
 
 
 |multiplicador_4bits|multiplicador-completo:inst14
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst14|somador_completo:inst
@@ -164,12 +186,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst11
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst11|somador_completo:inst
@@ -184,12 +206,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst7
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst7|somador_completo:inst
@@ -204,12 +226,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst4
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst4|somador_completo:inst
@@ -224,12 +246,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst3
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst3|somador_completo:inst
@@ -244,12 +266,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst2
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst2|somador_completo:inst
@@ -264,12 +286,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst|somador_completo:inst
@@ -284,12 +306,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst6
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst6|somador_completo:inst
@@ -304,12 +326,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst5
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst5|somador_completo:inst
@@ -324,12 +346,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst10
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst10|somador_completo:inst
@@ -440,12 +462,12 @@ D => inst70.IN3
 
 
 |multiplicador_4bits|multiplicador-completo:inst17
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst17|somador_completo:inst
@@ -460,12 +482,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst13
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst13|somador_completo:inst
@@ -480,12 +502,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst8
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst8|somador_completo:inst
@@ -500,12 +522,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst12
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst12|somador_completo:inst
@@ -520,12 +542,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst16
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst16|somador_completo:inst
@@ -540,12 +562,12 @@ CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|multiplicador-completo:inst15
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador_4bits|multiplicador-completo:inst15|somador_completo:inst
@@ -557,5 +579,197 @@ B => inst3.IN1
 CarryIn => inst1.IN1
 CarryIn => inst2.IN1
 CarryOut <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador_4bits|display_de_segmentos:inst19
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplicador_4bits|display_de_segmentos:inst18
+0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst5.IN0
+A => inst4.IN0
+A => inst15.IN0
+A => inst9.IN0
+A => inst18.IN0
+A => inst22.IN0
+A => inst16.IN0
+A => inst26.IN0
+A => inst29.IN0
+A => inst25.IN0
+A => inst37.IN0
+A => inst46.IN0
+A => inst34.IN0
+A => inst101.IN0
+A => inst100.IN0
+A => inst60.IN0
+A => inst63.IN0
+A => inst59.IN0
+A => inst62.IN0
+A => inst69.IN0
+A => inst77.IN0
+A => inst72.IN0
+B => inst2.IN1
+B => inst4.IN1
+B => inst11.IN0
+B => inst8.IN0
+B => inst14.IN0
+B => inst19.IN1
+B => inst16.IN1
+B => inst26.IN1
+B => inst30.IN0
+B => inst25.IN1
+B => inst39.IN0
+B => inst38.IN0
+B => inst41.IN0
+B => inst43.IN1
+B => inst202.IN1
+B => inst103.IN0
+B => inst61.IN0
+B => inst64.IN0
+B => inst59.IN1
+B => inst69.IN1
+B => inst70.IN1
+B => inst73.IN0
+C => inst6.IN0
+C => inst10.IN0
+C => inst15.IN2
+C => inst17.IN0
+C => inst14.IN1
+C => inst18.IN1
+C => inst23.IN0
+C => inst26.IN2
+C => inst27.IN2
+C => inst39.IN1
+C => inst40.IN0
+C => inst46.IN2
+C => inst35.IN0
+C => inst102.IN0
+C => inst104.IN0
+C => inst58.IN2
+C => inst65.IN0
+C => inst57.IN1
+C => inst75.IN0
+C => inst70.IN2
+C => inst74.IN0
+D => inst7.IN0
+D => inst4.IN3
+D => inst15.IN3
+D => inst3.IN3
+D => inst13.IN0
+D => inst18.IN2
+D => inst19.IN3
+D => inst20.IN0
+D => inst31.IN0
+D => inst28.IN0
+D => inst39.IN2
+D => inst45.IN3
+D => inst42.IN0
+D => inst36.IN0
+D => inst203.IN2
+D => inst201.IN1
+D => inst56.IN2
+D => inst59.IN3
+D => inst57.IN2
+D => inst76.IN0
+D => inst70.IN3
+1 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+2 <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+3 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+4 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+5 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+6 <= inst66.DB_MAX_OUTPUT_PORT_TYPE
 
 

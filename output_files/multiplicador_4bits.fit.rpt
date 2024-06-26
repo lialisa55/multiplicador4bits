@@ -1,5 +1,5 @@
 Fitter report for multiplicador_4bits
-Tue Jun 25 17:20:57 2024
+Tue Jun 25 22:05:17 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -58,16 +58,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Jun 25 17:20:57 2024       ;
+; Fitter Status                   ; Successful - Tue Jun 25 22:05:17 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; multiplicador_4bits                         ;
 ; Top-level Entity Name           ; multiplicador_4bits                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 24 / 18,480 ( < 1 % )                       ;
+; Logic utilization (in ALMs)     ; 38 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 22 / 224 ( 10 % )                           ;
+; Total pins                      ; 36 / 224 ( 16 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total RAM Blocks                ; 0 / 308 ( 0 % )                             ;
@@ -153,25 +153,25 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.3%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                    ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+-------------------+----------------------------+--------------------------+
-; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 74 ) ; 0.00 % ( 0 / 74 )          ; 0.00 % ( 0 / 74 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 74 ) ; 0.00 % ( 0 / 74 )          ; 0.00 % ( 0 / 74 )        ;
-;                     ;                   ;                            ;                          ;
-; Routing (by net)    ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+-------------------+----------------------------+--------------------------+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 126 ) ; 0.00 % ( 0 / 126 )         ; 0.00 % ( 0 / 126 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 126 ) ; 0.00 % ( 0 / 126 )         ; 0.00 % ( 0 / 126 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -189,7 +189,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 74 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 126 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -205,11 +205,11 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 24 / 18,480        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 24                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 24 / 18,480        ; < 1 % ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 38 / 18,480        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 38                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 38 / 18,480        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                  ;       ;
-;         [b] ALMs used for LUT logic                         ; 24                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 38                 ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18,480         ; 0 %   ;
@@ -221,16 +221,16 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 4 / 1,848          ; < 1 % ;
-;     -- Logic LABs                                           ; 4                  ;       ;
+; Total LABs:  partially or completely used                   ; 6 / 1,848          ; < 1 % ;
+;     -- Logic LABs                                           ; 6                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 30                 ;       ;
+; Combinational ALUT usage for logic                          ; 54                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 17                 ;       ;
-;     -- 5 input functions                                    ; 3                  ;       ;
-;     -- 4 input functions                                    ; 3                  ;       ;
-;     -- <=3 input functions                                  ; 7                  ;       ;
+;     -- 6 input functions                                    ; 23                 ;       ;
+;     -- 5 input functions                                    ; 6                  ;       ;
+;     -- 4 input functions                                    ; 16                 ;       ;
+;     -- <=3 input functions                                  ; 9                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Dedicated logic registers                                   ; 0                  ;       ;
@@ -242,8 +242,8 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;         -- Routing optimization registers                   ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
-; I/O pins                                                    ; 22 / 224           ; 10 %  ;
-;     -- Clock pins                                           ; 0 / 9              ; 0 %   ;
+; I/O pins                                                    ; 36 / 224           ; 16 %  ;
+;     -- Clock pins                                           ; 3 / 9              ; 33 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 11             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; M10K blocks                                                 ; 0 / 308            ; 0 %   ;
@@ -266,11 +266,11 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.3% / 0.2% ;       ;
-; Maximum fan-out                                             ; 11                 ;       ;
-; Highest non-global fan-out                                  ; 11                 ;       ;
-; Total fan-out                                               ; 177                ;       ;
-; Average fan-out                                             ; 2.39               ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.5% / 0.4% ;       ;
+; Maximum fan-out                                             ; 25                 ;       ;
+; Highest non-global fan-out                                  ; 25                 ;       ;
+; Total fan-out                                               ; 314                ;       ;
+; Average fan-out                                             ; 2.49               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -279,11 +279,11 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 24 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 24                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 24 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 38 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 38                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 38 / 18480 ( < 1 % ) ; 0 / 18480 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 0                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 24                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 38                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 18480 ( 0 % )    ; 0 / 18480 ( 0 % )              ;
@@ -295,16 +295,16 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 4 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 4                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 6 / 1848 ( < 1 % )   ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 6                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 30                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 54                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
-;     -- 6 input functions                                    ; 17                   ; 0                              ;
-;     -- 5 input functions                                    ; 3                    ; 0                              ;
-;     -- 4 input functions                                    ; 3                    ; 0                              ;
-;     -- <=3 input functions                                  ; 7                    ; 0                              ;
+;     -- 6 input functions                                    ; 23                   ; 0                              ;
+;     -- 5 input functions                                    ; 6                    ; 0                              ;
+;     -- 4 input functions                                    ; 16                   ; 0                              ;
+;     -- <=3 input functions                                  ; 9                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
@@ -320,7 +320,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
-; I/O pins                                                    ; 22                   ; 0                              ;
+; I/O pins                                                    ; 36                   ; 0                              ;
 ; I/O registers                                               ; 0                    ; 0                              ;
 ; Total block memory bits                                     ; 0                    ; 0                              ;
 ; Total block memory implementation bits                      ; 0                    ; 0                              ;
@@ -332,7 +332,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 177                  ; 0                              ;
+;     -- Total Connections                                    ; 314                  ; 0                              ;
 ;     -- Registered Connections                               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -341,7 +341,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ;                                                             ;                      ;                                ;
 ; Partition Interface                                         ;                      ;                                ;
 ;     -- Input Ports                                          ; 8                    ; 0                              ;
-;     -- Output Ports                                         ; 14                   ; 0                              ;
+;     -- Output Ports                                         ; 28                   ; 0                              ;
 ;     -- Bidir Ports                                          ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Registered Ports                                            ;                      ;                                ;
@@ -365,14 +365,14 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; A0   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 10                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; A1   ; V13   ; 4A       ; 33           ; 0            ; 57           ; 11                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; A2   ; T13   ; 4A       ; 34           ; 0            ; 0            ; 8                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; A3   ; T12   ; 4A       ; 34           ; 0            ; 17           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B0   ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B1   ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 6                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B2   ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 7                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; B3   ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 5                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A0   ; U13   ; 4A       ; 33           ; 0            ; 40           ; 25                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A1   ; V13   ; 4A       ; 33           ; 0            ; 57           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A2   ; T13   ; 4A       ; 34           ; 0            ; 0            ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; A3   ; T12   ; 4A       ; 34           ; 0            ; 17           ; 13                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B0   ; AA15  ; 4A       ; 36           ; 0            ; 34           ; 22                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B1   ; AB15  ; 4A       ; 36           ; 0            ; 51           ; 21                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B2   ; AA14  ; 4A       ; 34           ; 0            ; 51           ; 19                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; B3   ; AA13  ; 4A       ; 34           ; 0            ; 34           ; 12                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -381,6 +381,20 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
+; AO0  ; Y16   ; 4A       ; 40           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO1  ; W16   ; 4A       ; 46           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO2  ; Y17   ; 4A       ; 40           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO3  ; V16   ; 4A       ; 46           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO4  ; U17   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO5  ; V18   ; 4A       ; 51           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; AO6  ; V19   ; 4A       ; 51           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO0  ; N9    ; 3B       ; 29           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO1  ; M8    ; 3B       ; 22           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO2  ; T14   ; 4A       ; 43           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO3  ; P14   ; 4A       ; 50           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO4  ; C1    ; 2A       ; 0            ; 21           ; 54           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO5  ; C2    ; 2A       ; 0            ; 21           ; 37           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
+; BO6  ; W19   ; 4A       ; 44           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; O00  ; U21   ; 4A       ; 52           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; O01  ; V21   ; 4A       ; 51           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
 ; O02  ; W22   ; 4A       ; 48           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; User                 ; -                    ; -                   ;
@@ -403,10 +417,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 +----------+------------------+---------------+--------------+---------------+
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ; VCCPD Voltage ;
 +----------+------------------+---------------+--------------+---------------+
-; 2A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 2A       ; 2 / 16 ( 13 % )  ; 2.5V          ; --           ; 2.5V          ;
 ; 3A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 3B       ; 0 / 32 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
-; 4A       ; 22 / 48 ( 46 % ) ; 2.5V          ; --           ; 2.5V          ;
+; 3B       ; 2 / 32 ( 6 % )   ; 2.5V          ; --           ; 2.5V          ;
+; 4A       ; 32 / 48 ( 67 % ) ; 2.5V          ; --           ; 2.5V          ;
 ; 5A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 5B       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
 ; 7A       ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ; 2.5V          ;
@@ -507,8 +521,8 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; B20      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B21      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B22      ;            ;          ; NC                              ;        ;              ;                     ; --           ;                 ; --       ; --           ;
-; C1       ; 16         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
-; C2       ; 18         ; 2A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
+; C1       ; 16         ; 2A       ; BO4                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
+; C2       ; 18         ; 2A       ; BO5                             ; output ; 2.5 V        ;                     ; Row I/O      ; Y               ; no       ; Off          ;
 ; C3       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; C4       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; C5       ; 292        ; 9A       ; ^GND                            ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -712,7 +726,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; M5       ; 48         ; 3A       ; #TDO                            ; output ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M6       ; 70         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M7       ; 72         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; M8       ; 86         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; M8       ; 86         ; 3B       ; BO1                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; M9       ; 88         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; M10      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -735,7 +749,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; N6       ; 64         ; 3A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N8       ; 80         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; N9       ; 104        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; N9       ; 104        ; 3B       ; BO0                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; N10      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; N12      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
@@ -762,7 +776,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 97         ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; P14      ; 142        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; P14      ; 142        ; 4A       ; BO3                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P16      ; 167        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 169        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -806,7 +820,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; T12      ; 110        ; 4A       ; A3                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; T13      ; 112        ; 4A       ; A2                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
-; T14      ; 126        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; T14      ; 126        ; 4A       ; BO2                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; T15      ; 159        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T17      ; 157        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -831,7 +845,7 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U15      ; 128        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U16      ; 150        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U17      ; 152        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U17      ; 152        ; 4A       ; AO4                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; U18      ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U20      ; 153        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -852,10 +866,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; V13      ; 107        ; 4A       ; A1                              ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V14      ; 118        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V15      ; 120        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V16      ; 134        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V16      ; 134        ; 4A       ; AO3                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V18      ; 149        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; V19      ; 147        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; V18      ; 149        ; 4A       ; AO5                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; V19      ; 147        ; 4A       ; AO6                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V20      ; 131        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V21      ; 148        ; 4A       ; O01                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -874,10 +888,10 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; W13      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W14      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W15      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W16      ; 136        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; W16      ; 136        ; 4A       ; AO1                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W17      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W19      ; 133        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; W19      ; 133        ; 4A       ; BO6                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W20      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W21      ; 145        ; 4A       ; O03                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; W22      ; 140        ; 4A       ; O02                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
@@ -896,8 +910,8 @@ The pin-out file can be found in C:/Users/15522341/Desktop/multiplicador_4bits/o
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; Y14      ; 115        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y15      ; 117        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y16      ; 123        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; Y17      ; 125        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; Y16      ; 123        ; 4A       ; AO0                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; Y17      ; 125        ; 4A       ; AO2                             ; output ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y19      ; 141        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y20      ; 139        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
@@ -926,14 +940,28 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; O14      ; Incomplete set of assignments ;
 ; O15      ; Incomplete set of assignments ;
 ; O16      ; Incomplete set of assignments ;
+; AO0      ; Incomplete set of assignments ;
+; AO1      ; Incomplete set of assignments ;
+; AO2      ; Incomplete set of assignments ;
+; AO3      ; Incomplete set of assignments ;
+; AO4      ; Incomplete set of assignments ;
+; AO5      ; Incomplete set of assignments ;
+; AO6      ; Incomplete set of assignments ;
+; BO0      ; Incomplete set of assignments ;
+; BO1      ; Incomplete set of assignments ;
+; BO2      ; Incomplete set of assignments ;
+; BO3      ; Incomplete set of assignments ;
+; BO4      ; Incomplete set of assignments ;
+; BO5      ; Incomplete set of assignments ;
+; BO6      ; Incomplete set of assignments ;
 ; A0       ; Incomplete set of assignments ;
+; B0       ; Incomplete set of assignments ;
 ; B3       ; Incomplete set of assignments ;
 ; A1       ; Incomplete set of assignments ;
 ; B2       ; Incomplete set of assignments ;
 ; A2       ; Incomplete set of assignments ;
 ; B1       ; Incomplete set of assignments ;
 ; A3       ; Incomplete set of assignments ;
-; B0       ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -942,30 +970,30 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node         ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name            ; Library Name ;
 +------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
-; |multiplicador_4bits               ; 23.5 (0.5)           ; 23.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 30 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 22   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
-;    |display_de_segmentos:inst1|    ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst1                          ; display_de_segmentos   ; work         ;
+; |multiplicador_4bits               ; 37.5 (0.5)           ; 38.0 (0.5)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 54 (1)              ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
+;    |display_de_segmentos:inst1|    ; 10.0 (10.0)          ; 10.0 (10.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 13 (13)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst1                          ; display_de_segmentos   ; work         ;
+;    |display_de_segmentos:inst18|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst18                         ; display_de_segmentos   ; work         ;
+;    |display_de_segmentos:inst19|   ; 3.5 (3.5)            ; 3.5 (3.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst19                         ; display_de_segmentos   ; work         ;
 ;    |display_de_segmentos:inst9|    ; 7.0 (7.0)            ; 7.0 (7.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst9                          ; display_de_segmentos   ; work         ;
-;    |multiplicador-completo:inst10| ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst11| ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst12| ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst13| ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13|somador_completo:inst ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst14| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14                       ; multiplicador-completo ; work         ;
-;    |multiplicador-completo:inst15| ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15                       ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst10| ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst10|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst11| ; 1.5 (0.5)            ; 1.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst11|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst12| ; 1.5 (0.5)            ; 1.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst12|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst13| ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst13|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst14| ; 1.0 (0.5)            ; 1.0 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst14|somador_completo:inst ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst15| ; 1.0 (0.0)            ; 1.5 (0.0)                        ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15                       ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst15|somador_completo:inst ; somador_completo       ; work         ;
 ;    |multiplicador-completo:inst16| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst16                       ; multiplicador-completo ; work         ;
 ;    |multiplicador-completo:inst17| ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst17                       ; multiplicador-completo ; work         ;
 ;    |multiplicador-completo:inst5|  ; 0.5 (0.0)            ; 0.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst5                        ; multiplicador-completo ; work         ;
 ;       |somador_completo:inst|      ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst5|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst6|  ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst6                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst6|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst7|  ; 1.0 (0.0)            ; 1.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7|somador_completo:inst  ; somador_completo       ; work         ;
-;    |multiplicador-completo:inst8|  ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8                        ; multiplicador-completo ; work         ;
-;       |somador_completo:inst|      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8|somador_completo:inst  ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst7|  ; 2.0 (0.0)            ; 2.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (0)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7                        ; multiplicador-completo ; work         ;
+;       |somador_completo:inst|      ; 2.0 (2.0)            ; 2.0 (2.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst7|somador_completo:inst  ; somador_completo       ; work         ;
+;    |multiplicador-completo:inst8|  ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multiplicador_4bits|multiplicador-completo:inst8                        ; multiplicador-completo ; work         ;
 +------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -989,14 +1017,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; O14  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; O15  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; O16  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO0  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO1  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO2  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO3  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO4  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO5  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; AO6  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO0  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO1  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO2  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO3  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO4  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO5  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
+; BO6  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; A0   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; B0   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B3   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A1   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A2   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; B1   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; A3   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; B0   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1007,71 +1049,166 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+-------------------+---------+
 ; A0                                                               ;                   ;         ;
 ;      - multiplicador-completo:inst14|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst6|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst10|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst5|somador_completo:inst|inst3  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst5|somador_completo:inst|inst   ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst12~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst~0                         ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst32~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst55~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst15|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst66~0                      ; 0                 ; 0       ;
+; B0                                                               ;                   ;         ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 1                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 1                 ; 0       ;
+;      - multiplicador-completo:inst5|somador_completo:inst|inst   ; 1                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst12~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst~0                         ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst32~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst55~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 1                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 1                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst~0                        ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst12~0                      ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst24~0                      ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst32~0                      ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst44~0                      ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst55~0                      ; 1                 ; 0       ;
+;      - display_de_segmentos:inst18|inst66~0                      ; 1                 ; 0       ;
 ; B3                                                               ;                   ;         ;
 ;      - multiplicador-completo:inst14|inst2                       ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst17|inst2                       ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst16|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst15|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst66~0                      ; 0                 ; 0       ;
 ; A1                                                               ;                   ;         ;
 ;      - multiplicador-completo:inst11|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst6|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst5|somador_completo:inst|inst3  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst5|somador_completo:inst|inst   ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst1 ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst4 ; 0                 ; 0       ;
-;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst15|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst15|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst66~0                      ; 0                 ; 0       ;
 ; B2                                                               ;                   ;         ;
 ;      - multiplicador-completo:inst11|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst10|inst2                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst1 ; 0                 ; 0       ;
-;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst13|somador_completo:inst|inst4 ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst12|inst2                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst66~0                      ; 0                 ; 0       ;
 ; A2                                                               ;                   ;         ;
-;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst6|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst1 ; 0                 ; 0       ;
-;      - multiplicador-completo:inst16|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst12|somador_completo:inst|inst4 ; 0                 ; 0       ;
-; B1                                                               ;                   ;         ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst6|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst5|somador_completo:inst|inst3  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
-; A3                                                               ;                   ;         ;
-;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst17|inst2                       ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst13|somador_completo:inst|inst4 ; 0                 ; 0       ;
-; B0                                                               ;                   ;         ;
-;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst6|somador_completo:inst|inst4  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst5|somador_completo:inst|inst3  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst16|inst2                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst12|inst2                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst66~0                      ; 0                 ; 0       ;
+; B1                                                               ;                   ;         ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst10|somador_completo:inst|inst3 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst5|somador_completo:inst|inst   ; 0                 ; 0       ;
 ;      - multiplicador-completo:inst10|somador_completo:inst|inst  ; 0                 ; 0       ;
-;      - multiplicador-completo:inst8|somador_completo:inst|inst4  ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst27~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst24~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst203                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst44~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst66~0                       ; 0                 ; 0       ;
+;      - display_de_segmentos:inst1|inst69~0                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst8|inst2                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst18|inst66~0                      ; 0                 ; 0       ;
+; A3                                                               ;                   ;         ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst1  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst17|inst2                       ; 0                 ; 0       ;
+;      - multiplicador-completo:inst7|somador_completo:inst|inst4  ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst4 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst13|somador_completo:inst|inst1 ; 0                 ; 0       ;
+;      - multiplicador-completo:inst8|inst2                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst~0                        ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst12~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst24~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst32~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst44~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst55~0                      ; 0                 ; 0       ;
+;      - display_de_segmentos:inst19|inst66~0                      ; 0                 ; 0       ;
 +------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1080,21 +1217,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 40 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 6,048 ( 0 % )      ;
-; C2 interconnects             ; 20 / 54,648 ( < 1 % )  ;
-; C4 interconnects             ; 1 / 25,920 ( < 1 % )   ;
+; Block interconnects          ; 75 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 1 / 6,048 ( < 1 % )    ;
+; C2 interconnects             ; 28 / 54,648 ( < 1 % )  ;
+; C4 interconnects             ; 15 / 25,920 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )         ;
-; Direct links                 ; 15 / 140,056 ( < 1 % ) ;
+; Direct links                 ; 8 / 140,056 ( < 1 % )  ;
 ; Global clocks                ; 0 / 16 ( 0 % )         ;
-; Local interconnects          ; 6 / 36,960 ( < 1 % )   ;
+; Local interconnects          ; 17 / 36,960 ( < 1 % )  ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 1 / 5,984 ( < 1 % )    ;
-; R14/C12 interconnect drivers ; 1 / 9,504 ( < 1 % )    ;
-; R3 interconnects             ; 12 / 60,192 ( < 1 % )  ;
-; R6 interconnects             ; 19 / 127,072 ( < 1 % ) ;
+; R14 interconnects            ; 9 / 5,984 ( < 1 % )    ;
+; R14/C12 interconnect drivers ; 10 / 9,504 ( < 1 % )   ;
+; R3 interconnects             ; 44 / 60,192 ( < 1 % )  ;
+; R6 interconnects             ; 26 / 127,072 ( < 1 % ) ;
 ; Spine clocks                 ; 0 / 120 ( 0 % )        ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )      ;
 +------------------------------+------------------------+
@@ -1155,9 +1292,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000034    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-; Total Pass         ; 22        ; 0            ; 22        ; 0            ; 0            ; 22        ; 22        ; 0            ; 22        ; 22        ; 0            ; 14           ; 0            ; 0            ; 0            ; 0            ; 14           ; 0            ; 0            ; 0            ; 0            ; 14           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; Total Pass         ; 36        ; 0            ; 36        ; 0            ; 0            ; 36        ; 36        ; 0            ; 36        ; 36        ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 22           ; 0         ; 22           ; 22           ; 0         ; 0         ; 22           ; 0         ; 0         ; 22           ; 8            ; 22           ; 22           ; 22           ; 22           ; 8            ; 22           ; 22           ; 22           ; 22           ; 8            ; 22           ; 22           ; 22           ; 22           ; 22           ; 22           ;
+; Total Inapplicable ; 0         ; 36           ; 0         ; 36           ; 36           ; 0         ; 0         ; 36           ; 0         ; 0         ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 8            ; 36           ; 36           ; 36           ; 36           ; 36           ; 36           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
 ; O01                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; O00                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
@@ -1173,14 +1310,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; O14                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; O15                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; O16                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO0                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO2                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO3                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO4                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO5                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; AO6                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO0                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO1                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO2                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO3                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO4                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO5                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; BO6                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A0                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; B0                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B3                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A1                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A2                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; B1                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; A3                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; B0                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1253,7 +1404,7 @@ Info (332154): The derive_clock_uncertainty command did not apply clock uncertai
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
@@ -1269,13 +1420,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/15522341/Desktop/multiplicador_4bits/output_files/multiplicador_4bits.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6226 megabytes
-    Info: Processing ended: Tue Jun 25 17:20:57 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 6220 megabytes
+    Info: Processing ended: Tue Jun 25 22:05:18 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +----------------------------+

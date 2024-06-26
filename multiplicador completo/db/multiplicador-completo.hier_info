@@ -1,10 +1,10 @@
 |multiplicador-completo
-SumOut <= somador_completo:inst.CarryOut
+SumOut <= somador_completo:inst.Sum
 SumIn => somador_completo:inst.A
 A => inst2.IN0
 B => inst2.IN1
 CarryIn => somador_completo:inst.CarryIn
-CarryOut <= somador_completo:inst.Sum
+CarryOut <= somador_completo:inst.CarryOut
 
 
 |multiplicador-completo|somador_completo:inst
