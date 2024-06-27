@@ -67,6 +67,13 @@ BO3 <= display_de_segmentos:inst18.3
 BO4 <= display_de_segmentos:inst18.4
 BO5 <= display_de_segmentos:inst18.5
 BO6 <= display_de_segmentos:inst18.6
+OsinalB <= sinalB.DB_MAX_OUTPUT_PORT_TYPE
+sinalB => OsinalB.DATAIN
+sinalB => inst20.IN0
+OsinalA <= sinalA.DB_MAX_OUTPUT_PORT_TYPE
+sinalA => OsinalA.DATAIN
+sinalA => inst20.IN1
+OsinalResul <= inst20.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multiplicador_4bits|display_de_segmentos:inst1

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplicador_4bits
-Tue Jun 25 22:05:01 2024
+Thu Jun 27 13:31:06 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Jun 25 22:05:01 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Jun 27 13:31:06 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; multiplicador_4bits                         ;
 ; Top-level Entity Name           ; multiplicador_4bits                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 36                                          ;
+; Total pins                      ; 41                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -166,16 +166,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
-; multiplicador_4bits.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/15522341/Desktop/multiplicador_4bits/multiplicador_4bits.bdf    ;         ;
-; display_de_segmentos.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador_4bits/display_de_segmentos.bdf   ;         ;
-; multiplicador-completo.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador_4bits/multiplicador-completo.bdf ;         ;
-; somador_completo.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador_4bits/somador_completo.bdf       ;         ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
+; multiplicador_4bits.bdf          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/15522341/Desktop/multiplicador4bits/multiplicador_4bits.bdf    ;         ;
+; display_de_segmentos.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador4bits/display_de_segmentos.bdf   ;         ;
+; multiplicador-completo.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador4bits/multiplicador-completo.bdf ;         ;
+; somador_completo.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/15522341/Desktop/multiplicador4bits/somador_completo.bdf       ;         ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -183,25 +183,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 38       ;
+; Estimate of Logic utilization (ALMs needed) ; 39       ;
 ;                                             ;          ;
-; Combinational ALUT usage for logic          ; 53       ;
+; Combinational ALUT usage for logic          ; 54       ;
 ;     -- 7 input functions                    ; 0        ;
 ;     -- 6 input functions                    ; 23       ;
 ;     -- 5 input functions                    ; 6        ;
 ;     -- 4 input functions                    ; 16       ;
-;     -- <=3 input functions                  ; 8        ;
+;     -- <=3 input functions                  ; 9        ;
 ;                                             ;          ;
 ; Dedicated logic registers                   ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 36       ;
+; I/O pins                                    ; 41       ;
 ;                                             ;          ;
 ; Total DSP Blocks                            ; 0        ;
 ;                                             ;          ;
 ; Maximum fan-out node                        ; A0~input ;
 ; Maximum fan-out                             ; 25       ;
-; Total fan-out                               ; 314      ;
-; Average fan-out                             ; 2.51     ;
+; Total fan-out                               ; 324      ;
+; Average fan-out                             ; 2.38     ;
 +---------------------------------------------+----------+
 
 
@@ -210,7 +210,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name            ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+------------------------+--------------+
-; |multiplicador_4bits               ; 53 (0)              ; 0 (0)                     ; 0                 ; 0          ; 36   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
+; |multiplicador_4bits               ; 54 (1)              ; 0 (0)                     ; 0                 ; 0          ; 41   ; 0            ; |multiplicador_4bits                                                     ; multiplicador_4bits    ; work         ;
 ;    |display_de_segmentos:inst18|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst18                         ; display_de_segmentos   ; work         ;
 ;    |display_de_segmentos:inst19|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst19                         ; display_de_segmentos   ; work         ;
 ;    |display_de_segmentos:inst1|    ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |multiplicador_4bits|display_de_segmentos:inst1                          ; display_de_segmentos   ; work         ;
@@ -258,17 +258,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 53                          ;
-;     normal            ; 53                          ;
-;         2 data inputs ; 6                           ;
+; arriav_lcell_comb     ; 54                          ;
+;     normal            ; 54                          ;
+;         2 data inputs ; 7                           ;
 ;         3 data inputs ; 2                           ;
 ;         4 data inputs ; 16                          ;
 ;         5 data inputs ; 6                           ;
 ;         6 data inputs ; 23                          ;
-; boundary_port         ; 36                          ;
+; boundary_port         ; 41                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.77                        ;
+; Average LUT depth     ; 2.69                        ;
 +-----------------------+-----------------------------+
 
 
@@ -287,7 +287,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Tue Jun 25 22:04:52 2024
+    Info: Processing started: Thu Jun 27 13:30:57 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplicador_4bits -c multiplicador_4bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -307,13 +307,13 @@ Info (12128): Elaborating entity "somador_completo" for hierarchy "multiplicador
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 53 logic cells
+Info (21057): Implemented 95 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 31 output pins
+    Info (21061): Implemented 54 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4819 megabytes
-    Info: Processing ended: Tue Jun 25 22:05:01 2024
+    Info: Processing ended: Thu Jun 27 13:31:06 2024
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:18
 

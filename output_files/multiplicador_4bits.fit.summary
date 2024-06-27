@@ -1,4 +1,4 @@
-Fitter Status : Successful - Tue Jun 25 22:05:17 2024
+Fitter Status : Successful - Thu Jun 27 13:31:22 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : multiplicador_4bits
 Top-level Entity Name : multiplicador_4bits
@@ -7,7 +7,7 @@ Device : 5CEBA4F23C7
 Timing Models : Final
 Logic utilization (in ALMs) : 38 / 18,480 ( < 1 % )
 Total registers : 0
-Total pins : 36 / 224 ( 16 % )
+Total pins : 41 / 224 ( 18 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 3,153,920 ( 0 % )
 Total RAM Blocks : 0 / 308 ( 0 % )

@@ -116,6 +116,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "OsinalB",
+					"strict" : false
+				},
+				{
+					"name" : "OsinalA",
+					"strict" : false
+				},
+				{
+					"name" : "OsinalResul",
+					"strict" : false
+				},
+				{
 					"name" : "A0",
 					"strict" : false
 				},
@@ -145,6 +157,14 @@
 				},
 				{
 					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "sinalB",
+					"strict" : false
+				},
+				{
+					"name" : "sinalA",
 					"strict" : false
 				}
 			]

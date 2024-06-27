@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Jun 25 22:05:01 2024
+Analysis & Synthesis Status : Successful - Thu Jun 27 13:31:06 2024
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : multiplicador_4bits
 Top-level Entity Name : multiplicador_4bits
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 36
+Total pins : 41
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

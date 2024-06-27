@@ -1,5 +1,5 @@
 Flow report for multiplicador_4bits
-Tue Jun 25 22:05:27 2024
+Thu Jun 27 13:31:32 2024
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Jun 25 22:05:22 2024       ;
+; Flow Status                     ; Successful - Thu Jun 27 13:31:27 2024       ;
 ; Quartus Prime Version           ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                   ; multiplicador_4bits                         ;
 ; Top-level Entity Name           ; multiplicador_4bits                         ;
@@ -50,7 +50,7 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 38 / 18,480 ( < 1 % )                       ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 36 / 224 ( 16 % )                           ;
+; Total pins                      ; 41 / 224 ( 18 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/25/2024 22:04:52 ;
+; Start date & time ; 06/27/2024 13:30:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; multiplicador_4bits ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589199.171936389208568         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 10995770589198.171950585703824         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -94,11 +94,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4819 MB             ; 00:00:18                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 6220 MB             ; 00:00:23                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4848 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5068 MB             ; 00:00:04                           ;
-; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4819 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:15     ; 1.0                     ; 6216 MB             ; 00:00:23                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4851 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5074 MB             ; 00:00:04                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:47                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +107,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; 6-305-08         ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; 6-305-08         ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; 6-305-08         ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; 6-305-08         ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; 6-305-31         ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; 6-305-31         ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; 6-305-31         ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; 6-305-31         ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
